@@ -1,0 +1,27 @@
+@import 'fotter';
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* para que los elementos se distribuyan de forma equitativa en la fila */
+
+
+    .card {
+        width: 30%;
+        /* adjust as needed */
+        margin: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .card {
+            width: 45%;
+            /* adjust as needed */
+        }
+    }
+
+}
