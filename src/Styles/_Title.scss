@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+
+    FirtsText {
+        display: block;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    SecondText {
+        display: none;
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+@media (max-width: 800px) {
+    SecondText {
+        display: block;
+    }
+}
