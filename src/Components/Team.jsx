@@ -11,9 +11,20 @@ export const Team = (props) => {
         <div className="container">
           {photos.map((photo, index) => (
             <div className="card">
-              <img src={photos[index]} alt="photo" />
-              <p>{names[index]}</p>
-              <p>{job[index]}</p>
+              <div className="card-foto-job">
+                <img src={photos[index]} alt="photo" />
+                <p className="job">
+                  {job[index].split("").map((char) => (
+                    <span
+                      className="job-char"
+                      style={{ writingMode: "vertical-rl" }}
+                    >
+                      {char}
+                    </span>
+                  ))}
+                </p>
+              </div>
+              <p className="name">{names[index]}</p>
             </div>
           ))}
         </div>

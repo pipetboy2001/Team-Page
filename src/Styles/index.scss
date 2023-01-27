@@ -1,27 +1,48 @@
-@import 'fotter';
+@import "fotter";
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* para que los elementos se distribuyan de forma equitativa en la fila */
-
 
     .card {
+        display: flex; /* establece el elemento "card" como contenedor flex */
+        flex-wrap: wrap; /* hace que los elementos se ajusten automáticamente al tamaño de la pantalla */
         width: 30%;
-        /* adjust as needed */
         margin: 10px;
 
+        .card-foto-job {
+            display: flex; /* establece el elemento "card-foto-job" como contenedor flex */
+            align-items: center; /* centra los elementos en el eje transversal */
+            width: 100%; /* establece el ancho del elemento al 100% del contenedor */
+        }
+
         img {
-            width: 100%;
+            width: 90%; /* establece el ancho de la imagen al 50% del contenedor */
+        }
+
+        .job {
+            width: 10%; /* establece el ancho del texto "Job" al 50% del contenedor */
+            text-align: center; /* centra el texto "Job" */
+            writing-mode: vertical-rl;
+        }
+
+
+        .name {
+            width: 100%; /* establece el ancho del texto "Name" al 100% del contenedor */
+            text-align: center; /* centra el texto "Name" */
         }
     }
+
+    
+
+
+        
+    
 
     @media only screen and (max-width: 600px) {
         .card {
             width: 45%;
-            /* adjust as needed */
         }
     }
-
 }
