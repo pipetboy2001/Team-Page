@@ -3,14 +3,32 @@
 
     FirtsText {
         display: block;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 2.5rem;
+        margin: 5%;
+        padding: 2%;
     }
 
     SecondText {
-        display: none;
-
+        margin: 5%;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        shortText {
+            display: none;
+            margin: 2%;
+            padding: 2%;
+        }
+
+        largeText {
+            display: block;
+            margin: 2%;
+            padding: 2%;
+        }
     }
+}
+
+.largeText {
+    padding: 2%;
 }
 
 @media (max-width: 800px) {
