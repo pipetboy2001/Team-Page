@@ -1,7 +1,7 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 
-export const Team = (props) => {
+const Team = (props) => {
   const { photos } = props;
   const names = [
     "Felipe",
@@ -46,3 +46,5 @@ export const Team = (props) => {
     </div>
   );
 };
+
+export default Team;
