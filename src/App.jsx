@@ -1,6 +1,7 @@
-import Title from "./Components/Title.jsx";
-import Team from "./components/Team.jsx";
-import Footer from "./components/Footer.jsx";
+import Title from "./Components/Title";
+import Team from "./Components/Team";
+import Footer from "./Components/Footer";
+
 import "./Styles/index.scss";
 import photo1 from "./assets/photo1.png";
 import photo2 from "./assets/photo2.png";
