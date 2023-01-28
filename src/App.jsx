@@ -1,7 +1,6 @@
 import Title from "./Components/Title.jsx";
 import Team from "./components/Team.jsx";
 import Footer from "./components/Footer.jsx";
-
 import "./Styles/index.scss";
 import photo1 from "./assets/photo1.png";
 import photo2 from "./assets/photo2.png";
@@ -12,7 +11,6 @@ import photo6 from "./assets/photo6.png";
 
 function App() {
   const photos = [photo1, photo2, photo3, photo4, photo5, photo6];
-
   return (
     <>
       <Title />
