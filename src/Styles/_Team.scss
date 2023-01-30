@@ -25,16 +25,19 @@
             writing-mode: vertical-rl;
         }
 
-
         .name {
             width: 100%; /* establece el ancho del texto "Name" al 100% del contenedor */
             text-align: center; /* centra el texto "Name" */
         }
     }
 
-    @media only screen and (max-width: 600px) {
+    
+
+    @media only screen and (max-width: 800px) {
         .card {
-            width: 45%;
+            width: calc(40%);   
         }
+
+        
     }
 }
